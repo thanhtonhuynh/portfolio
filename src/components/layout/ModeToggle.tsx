@@ -15,7 +15,8 @@ export function ModeToggle() {
   if (!mounted) return null;
 
   return (
-    <div className="space-x-1 rounded-full border p-1">
+    // Temporiarily make this fixed to the bottom right
+    <div className="fixed bottom-14 right-4 space-x-1 rounded-full border bg-transparent p-1">
       <Button
         variant="ghost"
         size="icon"
@@ -23,7 +24,7 @@ export function ModeToggle() {
         className={cn(
           "h-7 w-7 rounded-full",
           theme === "system"
-            ? "bg-muted"
+            ? "cursor-default bg-muted"
             : "text-muted-foreground hover:bg-background hover:text-foreground",
         )}
       >
@@ -38,7 +39,7 @@ export function ModeToggle() {
         className={cn(
           "h-7 w-7 rounded-full",
           theme === "light"
-            ? "bg-muted"
+            ? "cursor-default bg-muted"
             : "text-muted-foreground hover:bg-background hover:text-foreground",
         )}
       >
@@ -53,7 +54,7 @@ export function ModeToggle() {
         className={cn(
           "h-7 w-7 rounded-full",
           theme === "dark"
-            ? "bg-muted"
+            ? "cursor-default bg-muted"
             : "text-muted-foreground hover:bg-background hover:text-foreground",
         )}
       >
