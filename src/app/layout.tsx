@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout/Footer";
 import { TailwindScreenSizeIndicator } from "@/components/TailwindScreenSizeIndicator";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import type { Metadata } from "next";
@@ -29,7 +30,8 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} font-geist-sans antialiased`}>
         <ThemeProvider>
           <div className="relative mx-auto flex min-h-screen w-full max-w-screen-2xl flex-col border-border/40 bg-background dark:border-border min-[1536px]:border-x">
-            {children}
+            <main className="flex-1">{children}</main>
+            <Footer />
           </div>
         </ThemeProvider>
         <TailwindScreenSizeIndicator />
