@@ -4,6 +4,7 @@ import { TailwindScreenSizeIndicator } from "@/components/TailwindScreenSizeIndi
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -38,6 +39,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <Toaster closeButton duration={10000} />
         <TailwindScreenSizeIndicator />
       </body>
     </html>
