@@ -1,8 +1,12 @@
 import { ContactForm } from "./ContactForm";
+import { Socials } from "./Socials";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative mb-4 flex min-h-screen flex-col rounded-3xl border">
+    <section
+      id="contact"
+      className="relative mb-8 flex min-h-screen flex-col justify-between rounded-3xl border"
+    >
       <h2 className="w-full space-y-2 rounded-t-3xl bg-muted p-16 text-4xl font-extrabold">
         <p>Contact</p>
         <p className="text-base font-bold text-muted-foreground">
@@ -10,7 +14,12 @@ export function Contact() {
         </p>
       </h2>
 
-      <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col space-y-4 rounded-3xl bg-muted p-20 px-28">
+      <div className="mx-8 rounded-3xl bg-muted p-10">
+        <Socials />
+      </div>
+
+      <div className="mx-8 mb-4 flex flex-col space-y-4 rounded-3xl bg-muted p-20 px-28">
+        <h3 className="text-xl font-bold">Leave me a message</h3>
         <ContactForm />
       </div>
     </section>
