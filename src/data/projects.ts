@@ -45,7 +45,7 @@ export const projects: Project[] = [
     title: "CollabHub",
     subtitle: "Full-stack project management application",
     description:
-      "CollabHub serves as a centralized platform for effective collaboration and project organization.\nDeveloped as a school project for SFU CMPT 372 Web II - Server-side Development, Spring 2024 .",
+      "CollabHub serves as a centralized platform for effective collaboration and project organization.\nDeveloped as a school project for SFU CMPT 372 Web II - Server-side Development, Spring 2024.\nTeam project of 4 members.",
     image: "/collabhub.png",
     tags: ["Website", "PostgreSQL", "Express", "React", "TypeScript", "Sequelize", "SCSS"],
   },
