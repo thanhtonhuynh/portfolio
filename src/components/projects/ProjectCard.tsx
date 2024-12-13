@@ -37,7 +37,7 @@ export function ProjectCard({ project }: { project: Project }) {
 
       <CardFooter className="justify-end">
         <Button asChild variant={`link`}>
-          <Link href={`/projects/${project.slug}`}>
+          <Link href={`/project/${project.slug}`}>
             Learn more <ChevronRight className="size-4" />
           </Link>
         </Button>
