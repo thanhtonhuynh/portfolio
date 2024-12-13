@@ -1,9 +1,9 @@
+import { About } from "@/components/About";
+
 export default function Home() {
   return (
-    <div className="w-full bg-muted text-lg">
-      <div id="about" className="h-[500px]">
-        About
-      </div>
+    <>
+      <About />
 
       <div id="projects" className="h-[500px]">
         Projects
@@ -12,6 +12,6 @@ export default function Home() {
       <div id="contact" className="h-[500px]">
         Contact
       </div>
-    </div>
+    </>
   );
 }
