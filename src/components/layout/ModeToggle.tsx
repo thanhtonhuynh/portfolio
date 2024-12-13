@@ -22,13 +22,13 @@ export function ModeToggle() {
         size="icon"
         onClick={() => setTheme("system")}
         className={cn(
-          "h-7 w-7 rounded-full",
+          "size-7 rounded-full",
           theme === "system"
             ? "cursor-default bg-muted"
             : "text-muted-foreground hover:bg-background hover:text-foreground",
         )}
       >
-        <Monitor />
+        <Monitor className="size-4" />
         <span className="sr-only">System mode</span>
       </Button>
 
@@ -37,13 +37,13 @@ export function ModeToggle() {
         size="icon"
         onClick={() => setTheme("light")}
         className={cn(
-          "h-7 w-7 rounded-full",
+          "size-7 rounded-full",
           theme === "light"
             ? "cursor-default bg-muted"
             : "text-muted-foreground hover:bg-background hover:text-foreground",
         )}
       >
-        <SunIcon />
+        <SunIcon className="size-4" />
         <span className="sr-only">Light mode</span>
       </Button>
 
@@ -52,13 +52,13 @@ export function ModeToggle() {
         size="icon"
         onClick={() => setTheme("dark")}
         className={cn(
-          "h-7 w-7 rounded-full",
+          "size-7 rounded-full",
           theme === "dark"
             ? "cursor-default bg-muted"
             : "text-muted-foreground hover:bg-background hover:text-foreground",
         )}
       >
-        <MoonIcon />
+        <MoonIcon className="size-4" />
         <span className="sr-only">Dark mode</span>
       </Button>
     </div>
