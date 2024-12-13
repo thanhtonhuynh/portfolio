@@ -1,12 +1,9 @@
 export function About() {
   return (
-    <section
-      id="about"
-      className="relative mb-4 flex min-h-screen flex-col items-center justify-center border"
-    >
-      <h2 className="absolute top-32 w-full bg-muted p-16 text-4xl font-extrabold">About Me</h2>
+    <section id="about" className="relative mb-4 flex min-h-screen flex-col rounded-3xl border">
+      <h2 className="w-full rounded-t-3xl bg-muted p-16 text-4xl font-extrabold">About Me</h2>
 
-      <div className="flex w-1/2 flex-col space-y-4 rounded-full bg-muted p-12 px-16 leading-7">
+      <div className="absolute left-1/2 top-1/2 flex w-1/2 -translate-x-1/2 -translate-y-1/2 flex-col space-y-4 rounded-3xl bg-muted p-20 px-28 leading-7">
         <p className="">
           I am a Computer Science student at{" "}
           <span className="font-bold">Simon Fraser University</span>, BC.
