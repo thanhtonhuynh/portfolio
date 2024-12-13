@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { Projects } from "@/components/projects/Projects";
 import { Skills } from "@/components/skills/Skills";
 
 export default function Home() {
@@ -8,9 +9,7 @@ export default function Home() {
 
       <Skills />
 
-      <div id="projects" className="h-[500px]">
-        Projects
-      </div>
+      <Projects />
 
       <div id="contact" className="h-[500px]">
         Contact

@@ -6,7 +6,9 @@ export function Header() {
   return (
     <header className="relative flex min-h-screen flex-col items-center justify-center">
       <div className="absolute top-0 flex w-full items-center justify-between px-12 py-4 text-lg font-black">
-        <span>ton huynh</span>
+        <Link href="/" className="text-muted-foreground transition-colors hover:text-foreground">
+          ton huynh
+        </Link>
 
         <nav className="rounded-full bg-muted px-16 py-2 text-base font-semibold">
           <ul className="flex space-x-16">
@@ -35,6 +37,7 @@ export function Header() {
           width={400}
           height={600}
           className="rounded-full border dark:bg-muted"
+          priority
         />
 
         <div className="absolute left-24 top-1/4 -translate-y-1/4">

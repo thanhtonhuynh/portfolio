@@ -1,3 +1,4 @@
+import { Skill } from "@/types";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
@@ -15,19 +16,14 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 
-export type SkillItem = {
-  title: string;
-  icon: React.ReactNode;
-};
-
-export const skillItems: SkillItem[] = [
+export const skillItems: Skill[] = [
   {
     title: "CSS",
     icon: <SiCss3 size={56} />,
   },
   {
     title: "Tailwind",
-    icon: <SiTailwindcss className="h-16 w-16" />,
+    icon: <SiTailwindcss size={64} />,
   },
   {
     title: "HTML",
@@ -35,11 +31,11 @@ export const skillItems: SkillItem[] = [
   },
   {
     title: "JavaScript",
-    icon: <RiJavascriptFill className="h-16 w-16" />,
+    icon: <RiJavascriptFill size={64} />,
   },
   {
     title: "TypeScript",
-    icon: <BiLogoTypescript className="h-16 w-16" />,
+    icon: <BiLogoTypescript size={64} />,
   },
   {
     title: "Node.js",
@@ -51,7 +47,7 @@ export const skillItems: SkillItem[] = [
   },
   {
     title: "Next.js",
-    icon: <RiNextjsFill className="h-16 w-16" />,
+    icon: <RiNextjsFill size={64} />,
   },
   {
     title: "Express",
@@ -83,10 +79,10 @@ export const skillItems: SkillItem[] = [
   },
   {
     title: "Git",
-    icon: <FaGitAlt className="h-16 w-16" />,
+    icon: <FaGitAlt size={64} />,
   },
   {
     title: "Docker",
-    icon: <SiDocker className="h-16 w-16" />,
+    icon: <SiDocker size={64} />,
   },
 ];

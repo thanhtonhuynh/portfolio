@@ -1,4 +1,4 @@
-import { skillItems } from "@/constants/skills";
+import { skillItems } from "@/data/skills";
 
 export function Skills() {
   return (
