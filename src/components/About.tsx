@@ -2,7 +2,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative flex min-h-screen flex-col items-center justify-center border"
+      className="relative mb-4 flex min-h-screen flex-col items-center justify-center border"
     >
       <h2 className="absolute top-32 w-full bg-muted p-16 text-4xl font-extrabold">About Me</h2>
 
