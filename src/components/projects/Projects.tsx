@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
   return (
-    <section id="skills" className="relative mb-4 flex min-h-screen flex-col rounded-3xl border">
+    <section id="projects" className="relative mb-4 flex min-h-screen flex-col rounded-3xl border">
       <h2 className="w-full space-y-2 rounded-t-3xl bg-muted p-16 text-4xl font-extrabold">
         Projects
       </h2>

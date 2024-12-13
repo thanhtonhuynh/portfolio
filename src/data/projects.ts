@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "Ongba Management System",
     subtitle: "Full-stack restaurant employee management and sales reporting system",
     description:
-      "Ongba Management System is a web application designed to help restaurant manage their sales data, and their employee hours and tips.\nThis project was developed from the bottom of my heart for Ongba Vietnamese Eatery, a local restaurant, and also a family to me, that I worked at for over 6 years.",
+      "Ongba Management System is a web application designed to help restaurant manage their sales data, and their employee hours and tips.\nDeveloped as a gift from the bottom of my heart to Ongba Vietnamese Eatery, a local restaurant, and also a family to me, that I worked at for over 6 years.",
     image: "/ongba-homepage.jpeg",
     tags: [
       "Website",
