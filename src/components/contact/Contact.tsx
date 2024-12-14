@@ -7,14 +7,14 @@ export function Contact() {
       id="contact"
       className="relative mb-8 flex min-h-screen flex-col justify-between rounded-3xl border"
     >
-      <h2 className="w-full space-y-2 rounded-t-3xl bg-muted p-16 text-4xl font-extrabold">
+      <h2 className="mb-4 w-full space-y-2 rounded-3xl bg-muted p-16 text-4xl font-extrabold">
         <p>Contact</p>
         <p className="text-base font-bold text-muted-foreground">
           Learn enough about me? Let's get in touch!
         </p>
       </h2>
 
-      <div className="mx-8 rounded-3xl bg-muted p-10">
+      <div className="mx-8 mb-4 rounded-3xl bg-muted p-10">
         <Socials />
       </div>
 

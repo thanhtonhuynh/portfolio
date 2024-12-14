@@ -25,8 +25,9 @@ export function About() {
           new technologies and tools that can smooth out the development process.
         </p>
         <p className="">
-          With a strong focus in <span className="font-bold">web development and web design</span>,
-          I am currently seeking opportunities to grow, learn, and contribute my values.
+          With a strong focus in{" "}
+          <span className="font-bold">full-stack web development and web design</span>, I am
+          currently seeking opportunities to grow, learn, and contribute my values.
         </p>
       </div>
 
