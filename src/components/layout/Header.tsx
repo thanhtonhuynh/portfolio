@@ -9,24 +9,32 @@ export function Header() {
           ton huynh
         </Link>
 
-        <nav className="rounded-full bg-muted px-16 py-2 text-base font-semibold">
-          <ul className="flex space-x-16">
+        <nav className="rounded-full bg-muted px-16 py-1 text-base font-semibold">
+          <ul className="flex space-x-8">
             <li>
-              <Link href={"/#about"}>About</Link>
+              <Button asChild variant={"link"}>
+                <Link href={"/#about"}>About</Link>
+              </Button>
             </li>
             <li>
-              <Link href={"/#skills"}>Skills</Link>
+              <Button asChild variant={"link"}>
+                <Link href={"/#skills"}>Skills</Link>
+              </Button>
             </li>
             <li>
-              <Link href={"/#projects"}>Projects</Link>
+              <Button asChild variant={"link"}>
+                <Link href={"/#projects"}>Projects</Link>
+              </Button>
             </li>
             <li>
-              <Link href={"/#contact"}>Contact</Link>
+              <Button asChild variant={"link"}>
+                <Link href={"/#contact"}>Contact</Link>
+              </Button>
             </li>
           </ul>
         </nav>
 
-        <Button className="rounded-full">CONTACT ME</Button>
+        <Button className="">CONTACT ME</Button>
       </div>
     </header>
   );
