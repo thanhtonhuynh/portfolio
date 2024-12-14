@@ -14,10 +14,12 @@ export const projects: Project[] = [
       "React",
       "MongoDB",
       "TypeScript",
-      "Tailwind",
+      "Tailwindcss",
       "Prisma",
       "Shadcn/ui",
     ],
+    siteUrl: "https://ems.ongba.ca/",
+    repoUrl: "https://github.com/thanhtonhuynh/ongba-management",
   },
 
   {
@@ -33,7 +35,7 @@ export const projects: Project[] = [
       "React",
       "MongoDB",
       "TypeScript",
-      "Tailwind",
+      "Tailwindcss",
       "Prisma",
       "Shadcn/ui",
       "Stripe",

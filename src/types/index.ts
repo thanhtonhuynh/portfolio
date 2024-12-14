@@ -10,4 +10,6 @@ export type Project = {
   description: string;
   image: string;
   tags: string[];
+  siteUrl?: string;
+  repoUrl?: string;
 };
