@@ -6,6 +6,7 @@ import { projects } from "@/data/projects";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ProjectHeader } from "../ProjectHeader";
+import { ProjectLinks } from "../ProjectLinks";
 import { TechStackItem } from "../TechStackItem";
 
 export default function Page() {
@@ -73,7 +74,7 @@ export default function Page() {
         <section>
           <h2 className="mb-8 text-2xl font-bold">Features</h2>
 
-          <ul className="grid gap-3">
+          <ul className="space-y-16">
             <li className="grid items-center gap-24 md:grid-cols-2 md:gap-4">
               <div className="relative">
                 <div className="max-w-xl">
@@ -110,8 +111,8 @@ export default function Page() {
               </div>
             </li>
 
-            <li className="mt-20 grid items-center justify-items-center gap-4 md:grid-cols-2">
-              <div>
+            <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
+              <div className="order-last md:order-first">
                 <h3 className="mb-2 font-semibold">Role-based access control</h3>
                 <p>
                   CollabHub has a role-based access control system that allows the project owner to
@@ -154,7 +155,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <div className="mt-4">
+          <div className="mt-8">
             <h3 className="mb-2 font-semibold">Other features</h3>
 
             <ul className="space-y-3">
@@ -200,6 +201,12 @@ export default function Page() {
           </ul>
         </section>
       </main>
+
+      <footer className="mt-8">
+        <div className="flex justify-center gap-16">
+          <ProjectLinks project={project} />
+        </div>
+      </footer>
     </section>
   );
 }

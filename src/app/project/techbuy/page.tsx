@@ -6,6 +6,7 @@ import { projects } from "@/data/projects";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ProjectHeader } from "../ProjectHeader";
+import { ProjectLinks } from "../ProjectLinks";
 import { TechStackItem } from "../TechStackItem";
 
 export default function Page() {
@@ -71,7 +72,7 @@ export default function Page() {
         <section>
           <h2 className="mb-8 text-2xl font-bold">Features</h2>
 
-          <ul className="space-y-3">
+          <ul className="space-y-16">
             <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
               <div className="max-w-xs">
                 <Image
@@ -94,7 +95,7 @@ export default function Page() {
             </li>
 
             <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
-              <div>
+              <div className="order-last md:order-first">
                 <h3 className="mb-2 font-semibold">
                   Stripe payment processing with webhook integration
                 </h3>
@@ -137,7 +138,7 @@ export default function Page() {
             </li>
 
             <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
-              <div>
+              <div className="order-last md:order-first">
                 <h3 className="mb-2 font-semibold">
                   Product management
                   <span className="text-muted-foreground"> - Admin Feature</span>
@@ -161,7 +162,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <div className="mt-4">
+          <div className="mt-8">
             <h3 className="mb-2 font-semibold">Other features</h3>
 
             <ul className="space-y-3">
@@ -176,6 +177,10 @@ export default function Page() {
               <li>
                 Session-based authentication and authorization - login, signup using email and
                 password, and reset password by email.
+              </li>
+              <li>
+                Role-based access control - admin users have access to admin features, while regular
+                users can only browse and purchase products.
               </li>
               <li>Rate limiting using sliding window algorithm.</li>
             </ul>
@@ -204,6 +209,12 @@ export default function Page() {
           </ul>
         </section>
       </main>
+
+      <footer className="mt-8">
+        <div className="flex justify-center gap-16">
+          <ProjectLinks project={project} />
+        </div>
+      </footer>
     </section>
   );
 }

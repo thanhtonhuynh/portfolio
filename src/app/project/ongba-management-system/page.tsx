@@ -69,7 +69,7 @@ export default function Page() {
         <section>
           <h2 className="mb-8 text-2xl font-bold">Features</h2>
 
-          <ul className="space-y-3">
+          <ul className="space-y-16">
             <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
               <div className="max-w-md">
                 <Image
@@ -93,7 +93,7 @@ export default function Page() {
             </li>
 
             <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
-              <div>
+              <div className="order-last md:order-first">
                 <h3 className="mb-2 font-semibold">
                   My shifts: Track hours worked and tips earned
                 </h3>
@@ -140,7 +140,7 @@ export default function Page() {
             </li>
 
             <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
-              <div>
+              <div className="order-last md:order-first">
                 <h3 className="mb-2 font-semibold">
                   Monthly employees' hours and tips breakdown
                   <span className="text-muted-foreground"> - Admin Feature</span>
@@ -187,7 +187,7 @@ export default function Page() {
             </li>
 
             <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
-              <div>
+              <div className="order-last md:order-first">
                 <h3 className="mb-2 font-semibold">Role-based access control</h3>
                 <p>
                   Role-based access control (RBAC) is implemented to manage user roles and
@@ -213,7 +213,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <div className="mt-4">
+          <div className="mt-8">
             <h3 className="mb-2 font-semibold">Other features</h3>
 
             <ul className="space-y-3">
