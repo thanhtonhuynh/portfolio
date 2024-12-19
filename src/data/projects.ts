@@ -17,6 +17,7 @@ export const projects: Project[] = [
       "Tailwindcss",
       "Prisma",
       "Shadcn/ui",
+      "Vercel",
     ],
     siteUrl: "https://ems.ongba.ca/",
     repoUrl: "https://github.com/thanhtonhuynh/ongba-management",
@@ -39,7 +40,10 @@ export const projects: Project[] = [
       "Prisma",
       "Shadcn/ui",
       "Stripe",
+      "Vercel",
     ],
+    siteUrl: "https://techbuy-ecommerce.vercel.app/",
+    repoUrl: "https://github.com/thanhtonhuynh/techbuy-ecommerce",
   },
 
   {
@@ -49,6 +53,17 @@ export const projects: Project[] = [
     description:
       "CollabHub serves as a centralized platform for effective collaboration and project organization.\nDeveloped as a school project for SFU CMPT 372 Web II - Server-side Development, Spring 2024.\nTeam project of 4 members.",
     image: "/collabhub.png",
-    tags: ["Website", "PostgreSQL", "Express", "React", "TypeScript", "Sequelize", "SCSS"],
+    tags: [
+      "Website",
+      "PostgreSQL",
+      "Express",
+      "React",
+      "TypeScript",
+      "Sequelize",
+      "Socket.io",
+      "SCSS",
+      "GCP",
+    ],
+    repoUrl: "https://github.com/SFU-CMPT-372-Spring-2024-Group-24/CollabHub",
   },
 ];

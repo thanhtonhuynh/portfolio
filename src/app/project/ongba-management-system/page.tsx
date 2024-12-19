@@ -226,7 +226,6 @@ export default function Page() {
                 by email.
               </li>
               <li>Rate limiting using sliding window algorithm.</li>
-              <li>Fully responsive and minimal design, user-friendly UI/UX.</li>
             </ul>
           </div>
         </section>
