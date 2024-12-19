@@ -21,7 +21,12 @@ export function About() {
         <p className="">
           <span className="font-bold">Elegant</span>, <span className="font-bold">efficient</span>,
           and <span className="font-bold">easy to use</span> are the three main keywords that I
-          always bring on the table when working on a project. I am always eager and ready to learn
+          always bring on the table when working on a project.
+        </p>
+        <p>
+          My core stack includes <span className="font-bold">React</span>,{" "}
+          <span className="font-bold">Next.js</span>, <span className="font-bold">MongoDB</span>,
+          and <span className="font-bold">Tailwindcss</span>. I am always eager and ready to learn
           new technologies and tools that can smooth out the development process.
         </p>
         <p className="">
