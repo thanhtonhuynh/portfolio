@@ -222,8 +222,8 @@ export default function Page() {
                 Account settings for updating personal information, password, and profile picture.
               </li>
               <li>
-                Session-based authentication and authorization - login, signup, and reset password
-                by email.
+                Session-based authentication and authorization - login, signup using email and
+                password, and reset password by email.
               </li>
               <li>Rate limiting using sliding window algorithm.</li>
             </ul>

@@ -160,7 +160,8 @@ export default function Page() {
             <ul className="space-y-3">
               <li>Admin dashboard for managing users, projects, and roles.</li>
               <li>
-                Session-based authentication and authorization - login, signup, and Google OAuth.
+                Session-based authentication and authorization - login, signup using email and
+                password, and Google login.
               </li>
               <li>
                 Account settings for updating personal information, password, and profile picture.
