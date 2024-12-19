@@ -2,7 +2,10 @@ import { skillItems } from "@/data/skills";
 
 export function Skills() {
   return (
-    <section id="skills" className="relative mb-4 flex min-h-screen flex-col rounded-3xl border">
+    <section
+      id="skills"
+      className="relative mb-4 flex min-h-screen scroll-m-16 flex-col rounded-3xl border"
+    >
       <h2 className="w-full space-y-2 rounded-t-3xl bg-muted p-16 text-4xl font-extrabold">
         <p>Skills</p>
         <p className="text-base font-bold text-muted-foreground">

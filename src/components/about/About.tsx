@@ -4,7 +4,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative mb-4 flex min-h-screen flex-col justify-between rounded-3xl border"
+      className="relative mb-4 flex min-h-screen scroll-m-16 flex-col justify-between rounded-3xl border"
     >
       <h2 className="w-full space-y-2 rounded-t-3xl bg-muted p-16 text-4xl font-extrabold">
         <p>About</p>
