@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative mb-8 flex min-h-screen scroll-m-16 flex-col justify-between rounded-3xl border"
+      className="relative mb-8 flex min-h-[calc(100vh-4rem)] scroll-m-16 flex-col justify-between rounded-3xl border"
     >
       <h2 className="mb-4 w-full space-y-2 rounded-3xl bg-muted p-16 text-4xl font-extrabold">
         <p>Contact</p>

@@ -33,8 +33,6 @@ export function Header() {
             </li>
           </ul>
         </nav>
-
-        <Button className="">CONTACT ME</Button>
       </div>
     </header>
   );
