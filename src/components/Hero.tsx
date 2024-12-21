@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative mb-4 flex h-full min-h-[calc(100vh-4rem)] flex-col">
+    <section className="relative mb-4 flex h-full min-h-[calc(100vh-4rem)] scroll-m-20 flex-col">
       <div className="flex flex-1 flex-col justify-between rounded-b-[150px] bg-muted">
         <div className="flex flex-1 flex-col items-center justify-center rounded-b-[150px] bg-background">
           {/* <div className="max-w-md"> */}
