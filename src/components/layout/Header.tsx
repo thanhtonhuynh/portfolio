@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
+import { Navbar } from "./Navbar";
 
 export function Header() {
   return (
@@ -9,7 +10,7 @@ export function Header() {
           ton huynh
         </Link>
 
-        <nav className="hidden rounded-full bg-muted py-1 text-base font-semibold md:block md:px-4 lg:px-16">
+        {/* <nav className="hidden rounded-full bg-muted py-1 text-base font-semibold md:block md:px-4 lg:px-16">
           <ul className="flex space-x-8">
             <li>
               <Button asChild variant={"link"}>
@@ -32,7 +33,9 @@ export function Header() {
               </Button>
             </li>
           </ul>
-        </nav>
+        </nav> */}
+
+        <Navbar />
       </div>
     </header>
   );

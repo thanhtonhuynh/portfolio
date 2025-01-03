@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="!scroll-smooth">
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} font-geist-sans antialiased`}>
         <ThemeProvider>
           {/* <div className="relative mx-auto flex min-h-screen w-full max-w-screen-2xl flex-col border-border/40 bg-background dark:border-border min-[1536px]:border-x"> */}
