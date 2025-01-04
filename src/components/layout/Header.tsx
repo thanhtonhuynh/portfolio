@@ -1,12 +1,20 @@
 import Link from "next/link";
 // import { Button } from "../ui/button";
+import Image from "next/image";
 import { Navbar } from "./Navbar";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 flex h-16 flex-col items-center justify-center bg-background/60 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-full w-full items-center justify-between px-8 text-lg font-black lg:px-12">
-        <Link href="/" className="text-muted-foreground transition-colors hover:text-foreground">
+        <Link href="/" className="flex items-center">
+          <Image
+            src={"/logo.png"}
+            alt="Ongba Logo"
+            width={40}
+            height={40}
+            className="aspect-square object-cover dark:invert"
+          />
           ton huynh
         </Link>
 
