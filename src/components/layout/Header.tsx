@@ -6,8 +6,8 @@ import { Navbar } from "./Navbar";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 flex h-16 flex-col items-center justify-center bg-background/60 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="flex h-full w-full items-center justify-between px-8 text-lg font-black lg:px-12">
-        <Link href="/" className="flex items-center">
+      <div className="flex h-full w-full max-w-screen-2xl items-center justify-between px-2 md:px-4 lg:px-12">
+        <Link href="/" className="flex items-center text-lg font-black">
           <Image
             src={"/logo.png"}
             alt="Ongba Logo"
