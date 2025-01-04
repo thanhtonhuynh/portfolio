@@ -14,7 +14,7 @@ export default function Page() {
   if (!project) notFound();
 
   return (
-    <section className="p-8 md:p-16">
+    <section className="p-4 md:p-16">
       <ProjectHeader project={project} />
 
       <main className="space-y-16 text-base leading-7">

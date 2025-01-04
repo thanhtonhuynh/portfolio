@@ -15,8 +15,7 @@ export function ModeToggle() {
   if (!mounted) return null;
 
   return (
-    // Temporiarily make this fixed to the bottom right
-    <div className="fixed bottom-14 right-4 space-x-1 rounded-full border bg-transparent p-1">
+    <div className="space-x-1 rounded-full border bg-transparent p-1">
       <Button
         variant="ghost"
         size="icon"

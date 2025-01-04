@@ -13,3 +13,9 @@ export type Project = {
   siteUrl?: string;
   repoUrl?: string;
 };
+
+export type Social = {
+  title: string;
+  icon: React.ReactNode;
+  url: string;
+};

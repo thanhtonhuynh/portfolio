@@ -2,7 +2,7 @@ import { Skill } from "@/types";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
-import { RiJavascriptFill, RiNextjsFill, RiNodejsLine } from "react-icons/ri";
+import { RiNextjsFill, RiNodejsLine } from "react-icons/ri";
 import {
   SiCss3,
   SiDocker,
@@ -29,10 +29,10 @@ export const skillItems: Skill[] = [
     title: "HTML",
     icon: <SiHtml5 size={56} />,
   },
-  {
-    title: "JavaScript",
-    icon: <RiJavascriptFill size={64} />,
-  },
+  // {
+  //   title: "JavaScript",
+  //   icon: <RiJavascriptFill size={64} />,
+  // },
   {
     title: "TypeScript",
     icon: <BiLogoTypescript size={64} />,

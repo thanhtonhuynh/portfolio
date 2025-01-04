@@ -26,7 +26,7 @@ export function Navbar() {
         onMouseLeave={() => {
           setPosition((prev) => ({ ...prev, opacity: 0 }));
         }}
-        className="relative flex rounded-full bg-muted p-1"
+        className="relative flex rounded-full border-2 border-primary p-1"
       >
         {navItems.map((navItem, i) => (
           <NavItem key={i} setPosition={setPosition} {...navItem} />
@@ -64,5 +64,5 @@ function NavItem({
 }
 
 function Cursor({ position }: { position: { left: number; width: number; opacity: number } }) {
-  return <motion.li animate={position} className="absolute z-0 h-8 rounded-full bg-background" />;
+  return <motion.li animate={position} className="absolute z-0 h-8 rounded-full bg-foreground" />;
 }

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export function Timeline() {
   return (
-    <div className="mb-4 flex justify-center gap-16">
-      <div className="space-y-4 p-2">
+    <div className="flex flex-col justify-center gap-4 md:flex-row md:gap-16">
+      <div className="place-content-center space-y-4 rounded-xl border-2 border-dashed border-primary p-4">
         <div className="mx-auto h-32 w-32">
           <Image src={langaraLogo} alt="Langara College Logo" width={128} height={125} />
         </div>
@@ -32,7 +32,7 @@ export function Timeline() {
         </div>
       </div>
 
-      <div className="space-y-4 p-2">
+      <div className="place-content-center space-y-4 rounded-xl border-2 border-dashed border-primary p-4">
         <div className="mx-auto flex h-32 w-32 flex-col justify-center">
           <Image src={sfuLogo} alt="SFU Logo" width={128} height={64} />
         </div>
