@@ -15,6 +15,7 @@ export type Project = {
 };
 
 export type Social = {
+  type: string;
   title: string;
   icon: React.ReactNode;
   url: string;

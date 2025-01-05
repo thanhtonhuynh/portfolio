@@ -1,15 +1,9 @@
 "use client";
 
+import { navItems } from "@/data/nav-links";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { Dispatch, SetStateAction, useRef, useState } from "react";
-
-const navItems = [
-  { id: "about", href: "/#about", label: "ABOUT" },
-  { id: "skills", href: "/#skills", label: "SKILLS" },
-  { id: "projects", href: "/#projects", label: "PROJECTS" },
-  { id: "contact", href: "/#contact", label: "CONTACT" },
-];
 
 type Position = { left: number; width: number; opacity: number };
 
@@ -21,7 +15,7 @@ export function Navbar() {
   });
 
   return (
-    <nav className="hidden text-sm font-semibold md:block">
+    <nav className="hidden text-sm font-semibold sm:block">
       <ul
         onMouseLeave={() => {
           setPosition((prev) => ({ ...prev, opacity: 0 }));
@@ -39,11 +33,11 @@ export function Navbar() {
 
 function NavItem({
   href,
-  label,
+  title,
   setPosition,
 }: {
   href: string;
-  label: string;
+  title: string;
   setPosition: Dispatch<SetStateAction<Position>>;
 }) {
   const ref = useRef<HTMLLIElement>(null);
@@ -58,7 +52,7 @@ function NavItem({
       }}
       className="relative z-10 px-5 py-1.5 text-white mix-blend-difference"
     >
-      <Link href={href}>{label}</Link>
+      <Link href={href}>{title}</Link>
     </li>
   );
 }
