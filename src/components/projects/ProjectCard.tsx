@@ -2,7 +2,7 @@
 
 import { Project } from "@/types";
 import { ChevronRight } from "lucide-react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, MotionValue, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -18,7 +18,7 @@ export function ProjectCard({
   project: Project;
   index: number;
   targetScale: number;
-  progress: any;
+  progress: MotionValue<number>;
 }) {
   const containerRef = useRef<HTMLLIElement>(null);
   const { scrollYProgress } = useScroll({
