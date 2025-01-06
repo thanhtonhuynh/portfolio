@@ -1,48 +1,128 @@
+"use client";
+
 import { Project } from "@/types";
 import { ChevronRight } from "lucide-react";
+import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 
-export function ProjectCard({ project }: { project: Project }) {
-  return (
-    <div className="relative rounded-xl border-2 border-l-8 border-primary shadow-md">
-      <Image
-        src={project.image}
-        alt={project.title}
-        width={1020}
-        height={770}
-        quality={100}
-        className="hidden w-full rounded-xl p-2 sm:block"
-      />
+export function ProjectCard({
+  project,
+  index,
+  targetScale,
+  progress,
+}: {
+  project: Project;
+  index: number;
+  targetScale: number;
+  progress: any;
+}) {
+  const containerRef = useRef<HTMLLIElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "start start"],
+  });
+  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
+  const scale = useTransform(progress, [index * 0.5, 1], [1, targetScale]);
 
-      <div className="w-full rounded-b-xl rounded-t-xl bg-muted sm:absolute sm:bottom-0 sm:rounded-t-none sm:border-t-2 sm:border-dashed sm:border-primary">
-        <div className="p-4 md:p-8 md:pb-4">
+  return (
+    <li ref={containerRef} className="sticky top-52 mx-auto">
+      <motion.div
+        className="relative flex h-[500px] origin-top flex-col justify-center rounded-xl border-2 border-l-8 border-primary bg-background p-4 shadow-md"
+        style={{ scale, top: `calc(${index * 20}px)` }}
+      >
+        <div className="mb-8 text-center">
           <h3 className="text-xl font-bold">{project.title}</h3>
           <p className="text-sm text-muted-foreground">{project.subtitle}</p>
         </div>
 
-        <div className="space-y-2 p-4 py-0 md:p-8 md:py-0">
-          <p className="whitespace-pre-line leading-snug">{project.description}</p>
+        <div className="grid place-items-center sm:grid-cols-2">
+          <div className="relative hidden max-w-lg overflow-hidden rounded-xl border sm:block">
+            <motion.div style={{ scale: imageScale }}>
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={1020}
+                height={770}
+                quality={100}
+              />
+            </motion.div>
+          </div>
 
-          <ul className="flex flex-wrap gap-2 sm:gap-4">
-            {project.tags.map((tag, i) => (
-              <li key={i}>
-                <Badge className="select-none">{tag}</Badge>
-              </li>
-            ))}
-          </ul>
+          {/* <div className="w-full rounded-b-xl rounded-t-xl bg-muted sm:absolute sm:bottom-0 sm:rounded-t-none sm:border-t-2 sm:border-dashed sm:border-primary"> */}
+          <div className="">
+            <div className="space-y-2 p-4 py-0 md:p-8 md:py-0">
+              <p className="whitespace-pre-line leading-snug">{project.description}</p>
+              <ul className="flex flex-wrap gap-2 sm:gap-4">
+                {project.tags.map((tag, i) => (
+                  <li key={i}>
+                    <Badge className="select-none">{tag}</Badge>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex items-center justify-end p-2">
+              <Button asChild variant={`link`}>
+                <Link href={`/project/${project.slug}`}>
+                  Learn more <ChevronRight className="size-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
         </div>
+      </motion.div>
+    </li>
+    // <li
+    //   ref={containerRef}
+    //   className="sticky top-0 mx-auto flex h-[calc(100vh-4rem)] items-center justify-center"
+    // >
+    //   <motion.div
+    //     className="relative flex min-h-[50%] origin-top flex-col justify-center rounded-xl border-2 border-l-8 border-primary bg-background p-4 shadow-md"
+    //     style={{ scale, top: `calc( ${index * 25}px)` }}
+    //   >
+    //     <div className="mb-8 text-center">
+    //       <h3 className="text-xl font-bold">{project.title}</h3>
+    //       <p className="text-sm text-muted-foreground">{project.subtitle}</p>
+    //     </div>
 
-        <div className="flex items-center justify-end p-2">
-          <Button asChild variant={`link`}>
-            <Link href={`/project/${project.slug}`}>
-              Learn more <ChevronRight className="size-4" />
-            </Link>
-          </Button>
-        </div>
-      </div>
-    </div>
+    //     <div className="grid place-items-center sm:grid-cols-2">
+    //       <div className="relative hidden max-w-lg overflow-hidden rounded-xl border sm:block">
+    //         <motion.div style={{ scale: imageScale }}>
+    //           <Image
+    //             src={project.image}
+    //             alt={project.title}
+    //             width={1020}
+    //             height={770}
+    //             quality={100}
+    //           />
+    //         </motion.div>
+    //       </div>
+
+    //       {/* <div className="w-full rounded-b-xl rounded-t-xl bg-muted sm:absolute sm:bottom-0 sm:rounded-t-none sm:border-t-2 sm:border-dashed sm:border-primary"> */}
+    //       <div className="">
+    //         <div className="space-y-2 p-4 py-0 md:p-8 md:py-0">
+    //           <p className="whitespace-pre-line leading-snug">{project.description}</p>
+    //           <ul className="flex flex-wrap gap-2 sm:gap-4">
+    //             {project.tags.map((tag, i) => (
+    //               <li key={i}>
+    //                 <Badge className="select-none">{tag}</Badge>
+    //               </li>
+    //             ))}
+    //           </ul>
+    //         </div>
+    //         <div className="flex items-center justify-end p-2">
+    //           <Button asChild variant={`link`}>
+    //             <Link href={`/project/${project.slug}`}>
+    //               Learn more <ChevronRight className="size-4" />
+    //             </Link>
+    //           </Button>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </motion.div>
+    // </li>
   );
 }
