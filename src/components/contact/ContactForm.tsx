@@ -34,7 +34,7 @@ export function ContactForm() {
       if (error) toast.error(error);
       else {
         form.reset();
-        toast.success("Your message has been sent successfully. I will get back to ASAP!");
+        toast.success("Your message has been sent successfully. I will get back to you ASAP! :)");
       }
     });
   }
