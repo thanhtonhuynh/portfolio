@@ -10,14 +10,13 @@ export function Hero() {
 
         <MotionConfig
           transition={{
-            duration: 1,
+            duration: 3,
             ease: [0.215, 0.61, 0.355, 1],
-            // delay: 0.1,
           }}
         >
           <motion.div
             className="relative p-4 md:p-8"
-            initial={{ y: 20, opacity: 0 }}
+            initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
             <h1 className="mb-4 text-4xl font-black md:mb-8 md:text-6xl">Hello, I'm Ton Huynh.</h1>
@@ -28,7 +27,7 @@ export function Hero() {
 
           <motion.div
             className="z-10 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-            initial={{ y: 20, opacity: 0 }}
+            initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
             <Image

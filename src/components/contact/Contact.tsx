@@ -7,7 +7,7 @@ export function Contact() {
       <h2 className="space-y-2 text-left md:text-center">
         <p className="text-3xl font-extrabold md:text-5xl">Contact</p>
         <p className="text-lg font-bold text-muted-foreground md:text-xl">
-          Learn enough about me? Let's get in touch!
+          Did I have you at <span className="italic">hello</span>?
         </p>
       </h2>
 
