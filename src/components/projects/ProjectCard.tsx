@@ -29,7 +29,7 @@ export function ProjectCard({
   const scale = useTransform(progress, [index * 0.5, 1], [1, targetScale]);
 
   return (
-    <li ref={containerRef} className="sticky top-52 mx-auto">
+    <li ref={containerRef} className="sticky top-24 mx-auto">
       <motion.div
         className="relative flex h-[500px] origin-top flex-col justify-center rounded-xl border-2 border-l-8 border-primary bg-background p-4 shadow-md"
         style={{ scale, top: `calc(${index * 20}px)` }}
