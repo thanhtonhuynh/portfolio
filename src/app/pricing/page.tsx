@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Pricing | Ton Huynh",
+  description: "Solutions for your online presence",
+};
 
 const options = [
   // {

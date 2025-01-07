@@ -3,11 +3,17 @@ import productSearch from "@/assets/techbuy/product-search.png";
 import shoppingCart from "@/assets/techbuy/shopping-cart.png";
 import stripePayment from "@/assets/techbuy/stripe-payment.png";
 import { projects } from "@/data/projects";
+import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ProjectHeader } from "../ProjectHeader";
 import { ProjectLinks } from "../ProjectLinks";
 import { TechStackItem } from "../TechStackItem";
+
+export const metadata: Metadata = {
+  title: "Techbuy | Ton Huynh",
+  description: "Full-stack e-commerce storefront and admin dashboard.",
+};
 
 export default function Page() {
   const project = projects.find((project) => project.slug === "techbuy");

@@ -3,11 +3,17 @@ import projectTaskManagement from "@/assets/collabhub/project-task-management.pn
 import projectTaskManagement2 from "@/assets/collabhub/project-task-management2.png";
 import rbacFeature from "@/assets/collabhub/rbac-feature.png";
 import { projects } from "@/data/projects";
+import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ProjectHeader } from "../ProjectHeader";
 import { ProjectLinks } from "../ProjectLinks";
 import { TechStackItem } from "../TechStackItem";
+
+export const metadata: Metadata = {
+  title: "CollabHub | Ton Huynh",
+  description: "Full-stack project management application.",
+};
 
 export default function Page() {
   const project = projects.find((project) => project.slug === "collabhub");

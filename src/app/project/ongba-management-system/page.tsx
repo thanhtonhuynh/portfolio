@@ -5,11 +5,17 @@ import myShifts from "@/assets/ongba/my-shifts-feature.png";
 import rbacFeature from "@/assets/ongba/rbac-feature.png";
 import reportGeneration from "@/assets/ongba/report-generation-feature.jpeg";
 import { projects } from "@/data/projects";
+import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ProjectHeader } from "../ProjectHeader";
 import { ProjectLinks } from "../ProjectLinks";
 import { TechStackItem } from "../TechStackItem";
+
+export const metadata: Metadata = {
+  title: "Ongba Management System | Ton Huynh",
+  description: "Full-stack restaurant employee management and sales reporting system.",
+};
 
 export default function Page() {
   const project = projects.find((project) => project.slug === "ongba-management-system");
