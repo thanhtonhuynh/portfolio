@@ -21,7 +21,7 @@ export function Hero() {
           >
             <h1 className="mb-4 text-4xl font-black md:mb-8 md:text-6xl">Hello, I'm Ton Huynh.</h1>
             <p className="text-xl font-bold md:text-2xl">
-              I'm a full-stack web developer with passion to create greate experiences.
+              I'm a full-stack web developer with passion to create great experiences.
             </p>
           </motion.div>
 
