@@ -10,39 +10,49 @@ export const metadata: Metadata = {
 };
 
 const options = [
-  // {
-  //   title: "Landing Page / Single Page",
-  //   price: "From $500",
-  //   description: "
-  //   features: ["", "", "", ""],
-  // },
   {
     title: "Static Website",
     price: "From $999",
     description: "Personal websites, portfolios, and small businesses.",
     features: [
+      "Minimum 5 pages",
       "Design + Development",
       "Fast, responsive, and user-friendly",
       "Search Engine Optimization",
+      "Ongoing security maintenance & updates",
       "1 year of free domain in a 3-year plan",
       "1 year of free hosting",
-      "Infinite revisions",
-      "Ongoing security maintenance & updates",
     ],
   },
   {
     title: "Website Application",
     price: "From $1999",
-    description: "Blogs, e-commerce, online bookings & services,  and custom solutions.",
+    description: "Blogs, e-commerce, online bookings & services, and custom solutions.",
     features: [
       "Design + Development",
       "Fast, responsive, and user-friendly",
       "Search Engine Optimization",
+      "Ongoing security maintenance & updates",
       "1 year of free domain in a 3-year plan",
       "1 year of free hosting",
       "First 3 months of free database hosting",
-      "Infinite revisions",
+    ],
+  },
+  {
+    title: "Subscription Plan",
+    price: "$0 down, from $119/month",
+    description: "Don't want to absorb the upfront cost? No problem!",
+    features: [
+      "Design + Development",
+      "Fast, responsive, and user-friendly",
+      "Search Engine Optimization",
       "Ongoing security maintenance & updates",
+      "Includes hosting and domain",
+      "First 3 months of free database hosting",
+      "Unlimited edits",
+      "Lifetime updates",
+      "Google Business Profile setup & management",
+      "24/7 support",
     ],
   },
 ];
@@ -63,14 +73,14 @@ export default function Page() {
       </header>
 
       <main className="w-full">
-        {/* <section className="grid gap-8 md:grid-cols-4 lg:grid-cols-3"> */}
-        <section className="grid gap-8 md:grid-cols-4">
+        <section className="grid gap-8 md:grid-cols-4 lg:grid-cols-3 lg:items-start">
+          {/* <section className="grid gap-8 md:grid-cols-4"> */}
           {options.map((option, i) => (
             <div
               key={i}
               className={cn(
-                // "flex flex-col gap-4 rounded-xl border p-8 md:col-span-2 lg:col-span-1",
-                "z-10 flex flex-col gap-4 rounded-xl border bg-background p-8 md:col-span-2",
+                "z-10 flex flex-col gap-4 rounded-xl border bg-background p-8 md:col-span-2 lg:col-span-1",
+                // "z-10 flex flex-col gap-4 rounded-xl border bg-background p-8 md:col-span-2",
                 i === 2 && "md:col-end-4",
               )}
             >
