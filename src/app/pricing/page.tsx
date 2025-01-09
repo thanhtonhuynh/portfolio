@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Check } from "lucide-react";
+import { CircleCheck } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -89,10 +89,10 @@ export default function Page() {
 
               <p className="text-muted-foreground">{option.description}</p>
 
-              <ul className="mt-4 space-y-3">
+              <ul className="mt-4 space-y-4">
                 {option.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <Check size={20} className="text-green-600" />
+                    <CircleCheck size={20} className="min-h-5 min-w-5 text-green-600" />
                     {feature}
                   </li>
                 ))}
