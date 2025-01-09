@@ -72,31 +72,31 @@ export default function Page() {
       </header>
 
       <main className="w-full">
-        <section className="grid gap-8 md:grid-cols-4 lg:grid-cols-3 lg:items-start">
+        <section className="grid gap-8 md:grid-cols-4 xl:grid-cols-3">
           {/* <section className="grid gap-8 md:grid-cols-4"> */}
           {options.map((option, i) => (
             <div
               key={i}
               className={cn(
-                "z-10 flex flex-col gap-4 rounded-xl border bg-background p-8 md:col-span-2 lg:col-span-1",
+                "z-10 flex flex-col justify-between gap-8 rounded-xl border-2 border-primary bg-background p-8 shadow-md transition-all duration-300 md:col-span-2 md:hover:scale-105 xl:col-span-1",
                 // "z-10 flex flex-col gap-4 rounded-xl border bg-background p-8 md:col-span-2",
                 i === 2 && "md:col-end-4",
               )}
             >
-              <h2 className="text-2xl font-semibold">{option.title}</h2>
+              <div className="flex flex-col gap-2">
+                <h2 className="text-2xl font-bold">{option.title}</h2>
+                <p className="text-muted-foreground">{option.description}</p>
+                <ul className="mt-4 space-y-4">
+                  {option.features.map((feature, i) => (
+                    <li key={i} className="flex items-center gap-2">
+                      <CircleCheck size={20} className="min-h-5 min-w-5 text-blue-600" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <p className="text-xl">{option.price}</p>
-
-              <p className="text-muted-foreground">{option.description}</p>
-
-              <ul className="mt-4 space-y-4">
-                {option.features.map((feature, i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <CircleCheck size={20} className="min-h-5 min-w-5 text-blue-600" />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-2xl font-bold">{option.price}</p>
             </div>
           ))}
         </section>
