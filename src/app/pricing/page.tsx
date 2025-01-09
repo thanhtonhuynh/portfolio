@@ -66,8 +66,15 @@ export default function Page() {
           Solutions for your online presence
         </h1>
 
-        <Button asChild effect={"shine"} size={"lg"} className="text-base font-semibold">
-          <Link href={"/#contact"}>Contact</Link>
+        <Button
+          asChild
+          effect={"shine"}
+          size={"lg"}
+          className="h-14 rounded-xl text-lg font-bold tracking-widest"
+        >
+          <Link href={"/#contact"} className="uppercase">
+            Contact me
+          </Link>
         </Button>
       </header>
 
