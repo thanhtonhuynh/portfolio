@@ -92,7 +92,7 @@ export default function Page() {
               <ul className="mt-4 space-y-4">
                 {option.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <CircleCheck size={20} className="min-h-5 min-w-5 text-green-600" />
+                    <CircleCheck size={20} className="min-h-5 min-w-5 text-blue-600" />
                     {feature}
                   </li>
                 ))}
