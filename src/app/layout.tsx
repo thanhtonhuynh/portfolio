@@ -2,6 +2,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { TailwindScreenSizeIndicator } from "@/components/TailwindScreenSizeIndicator";
 import { ThemeProvider } from "@/providers/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "sonner";
@@ -40,6 +41,7 @@ export default function RootLayout({
         </ThemeProvider>
         <Toaster closeButton duration={10000} />
         <TailwindScreenSizeIndicator />
+        <SpeedInsights />
       </body>
     </html>
   );
