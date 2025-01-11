@@ -18,9 +18,6 @@ export async function Footer() {
               <Link href={item.href}>{item.title}</Link>
             </Button>
           ))}
-          <Button effect={"hoverUnderline"} className="text-muted-foreground" variant="link">
-            <Link href="/pricing">Pricing</Link>
-          </Button>
         </ul>
 
         <ModeToggle />

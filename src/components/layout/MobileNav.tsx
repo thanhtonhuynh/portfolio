@@ -81,7 +81,7 @@ export function MobileNav() {
   }, [active]);
 
   return (
-    <div className="fixed right-4 h-10 sm:hidden">
+    <div className="fixed right-4 h-10 md:hidden">
       <motion.div
         className="absolute rounded-md bg-muted"
         variants={containerVariants}

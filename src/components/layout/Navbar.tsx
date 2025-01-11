@@ -15,7 +15,7 @@ export function Navbar() {
   });
 
   return (
-    <nav className="hidden text-sm font-semibold sm:block">
+    <nav className="hidden text-sm font-semibold md:block">
       <ul
         onMouseLeave={() => {
           setPosition((prev) => ({ ...prev, opacity: 0 }));
