@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const options = [
   {
     title: "Static Website",
-    price: "From $999",
+    price: "From $1299",
     description: "Personal websites, portfolios, and small businesses.",
     features: [
       "Minimum 5 pages",
@@ -21,12 +21,12 @@ const options = [
       "Search Engine Optimization",
       "Ongoing security maintenance & updates",
       "1 year of free domain in a 3-year plan",
-      "1 year of free cloud hosting",
+      "6 months of free cloud hosting",
     ],
   },
   {
     title: "Website Application",
-    price: "From $1999",
+    price: "From $2999",
     description: "Blogs, e-commerce, online bookings & services, and custom solutions.",
     features: [
       "Design + Development",
@@ -34,20 +34,20 @@ const options = [
       "Search Engine Optimization",
       "Ongoing security maintenance & updates",
       "1 year of free domain in a 3-year plan",
-      "1 year of free cloud hosting",
-      "First 3 months of free database hosting",
+      "6 months of free cloud hosting",
+      "First 1 month of free database hosting",
     ],
   },
   {
     title: "Subscription Plan",
-    price: "$0 down, from $119/month",
+    price: "$0 down, from $129/month",
     description: "Don't want to absorb the upfront cost? No problem!",
     features: [
       "Design + Development",
       "Fast, responsive, and user-friendly",
       "Search Engine Optimization",
       "Ongoing security maintenance & updates",
-      "Includes cloud hosting, database hosting, and domain",
+      "Includes cloud hosting, and domain",
       "Unlimited edits",
       "Lifetime updates",
       "Google Business Profile setup & management",
