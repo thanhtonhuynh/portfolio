@@ -1,9 +1,10 @@
-import monthlyCashflow from "@/assets/ongba/monthly-cashflow.png";
-import monthlyEmployeeHoursTipsBreakdown from "@/assets/ongba/monthly-employee-hours-tips-breakdown.png";
-import monthlySalesSummary from "@/assets/ongba/monthly-sales-summary.png";
-import myShifts from "@/assets/ongba/my-shifts-feature.png";
-import rbacFeature from "@/assets/ongba/rbac-feature.png";
-import reportGeneration from "@/assets/ongba/report-generation-feature.jpeg";
+import monthlyCashflow from "@/assets/ongba/cashflow.png";
+import reportCreation1 from "@/assets/ongba/create-sale-report-1.png";
+import reportCreation2 from "@/assets/ongba/create-sale-report-2.png";
+import rbacFeature from "@/assets/ongba/employees.png";
+import hourAndTip from "@/assets/ongba/hour-tip.png";
+import myShifts from "@/assets/ongba/my-shifts.png";
+import monthlySalesSummary from "@/assets/ongba/sales-summary.png";
 import { projects } from "@/data/projects";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -76,11 +77,21 @@ export default function Page() {
           <h2 className="mb-8 text-2xl font-bold">Features</h2>
 
           <ul className="space-y-16">
-            <li className="grid items-center justify-items-center gap-4 md:grid-cols-2">
+            <li className="grid items-center justify-items-center gap-8 md:grid-cols-3">
               <div className="max-w-md">
                 <Image
-                  src={reportGeneration}
-                  alt="Report generation example"
+                  src={reportCreation1}
+                  alt="Report creation example"
+                  width={450}
+                  height={530}
+                  className="w-full rounded-xl border object-contain"
+                />
+              </div>
+
+              <div className="max-w-md">
+                <Image
+                  src={reportCreation2}
+                  alt="Report creation example"
                   width={450}
                   height={530}
                   className="w-full rounded-xl border object-contain"
@@ -88,12 +99,12 @@ export default function Page() {
               </div>
 
               <div>
-                <h3 className="mb-2 font-semibold">Sales report generation</h3>
+                <h3 className="mb-2 font-semibold">Sales report creation</h3>
                 <p>
-                  Detailed breakdown of daily sales is automatically calculated using the submitted
-                  raw sales data, such as total sales, card sales, online sales, and tips.
-                  Employees' hours and tips are also calculated and displayed in the report. The
-                  report is then generated and stored in the system for future reference.
+                  Detailed breakdown of daily sales is automatically calculated using the entered
+                  sales data, such as total sales, card sales, online sales, and tips. Employees'
+                  hours and tips are also calculated and displayed in the report. The report is then
+                  generated and stored in the system for future reference.
                 </p>
               </div>
             </li>
@@ -160,7 +171,7 @@ export default function Page() {
 
               <div className="max-w-xl">
                 <Image
-                  src={monthlyEmployeeHoursTipsBreakdown}
+                  src={hourAndTip}
                   alt="Monthly employee hours and tips breakdown example"
                   width={576}
                   height={530}

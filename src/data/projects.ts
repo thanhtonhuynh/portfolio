@@ -7,7 +7,7 @@ export const projects: Project[] = [
     subtitle: "Full-stack restaurant employee management and sales reporting system",
     description:
       "Ongba Management System is a web application designed to help restaurant manage their sales data, and their employee hours and tips.\nDeveloped as a gift from the bottom of my heart to Ongba Vietnamese Eatery, a local restaurant, and also a family to me, that I worked at for over 6 years.",
-    image: "/ongba-homepage.jpeg",
+    image: "/ongba-homepage.png",
     tags: [
       "Website",
       "Next.js",

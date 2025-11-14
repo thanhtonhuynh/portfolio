@@ -31,7 +31,7 @@ export function ProjectCard({
   return (
     <li ref={containerRef} className="sticky top-24 mx-auto">
       <motion.div
-        className="relative flex h-[500px] origin-top flex-col justify-center rounded-xl border-2 border-l-8 border-primary bg-background p-4 shadow-md"
+        className="relative flex h-[500px] origin-top flex-col justify-center rounded-xl border-2 border-l-8 border-primary bg-background p-4 shadow-md md:h-[600px]"
         style={{ scale, top: `calc(${index * 20}px)` }}
       >
         <div className="mb-8 text-center">
@@ -39,24 +39,24 @@ export function ProjectCard({
           <p className="text-sm text-muted-foreground">{project.subtitle}</p>
         </div>
 
-        <div className="grid place-items-center sm:grid-cols-2">
-          <div className="relative hidden max-w-lg overflow-hidden rounded-xl border sm:block">
-            <motion.div style={{ scale: imageScale }}>
+        <div className="grid place-items-center md:grid-cols-2 md:gap-8">
+          <div className="relative hidden h-96 w-full max-w-lg overflow-hidden rounded-xl border shadow-sm md:block">
+            <motion.div style={{ scale: imageScale }} className="relative h-full w-full">
               <Image
                 src={project.image}
                 alt={project.title}
-                width={1020}
-                height={770}
+                fill
                 quality={100}
+                className="object-cover"
               />
             </motion.div>
           </div>
 
           {/* <div className="w-full rounded-b-xl rounded-t-xl bg-muted sm:absolute sm:bottom-0 sm:rounded-t-none sm:border-t-2 sm:border-dashed sm:border-primary"> */}
           <div className="">
-            <div className="space-y-2 p-4 py-0 md:p-8 md:py-0">
+            <div className="space-y-2 p-4 py-0 lg:p-8 lg:py-0">
               <p className="whitespace-pre-line leading-snug">{project.description}</p>
-              <ul className="flex flex-wrap gap-2 sm:gap-4">
+              <ul className="flex flex-wrap gap-2 md:gap-4">
                 {project.tags.map((tag, i) => (
                   <li key={i}>
                     <Badge className="select-none">{tag}</Badge>
